@@ -25,7 +25,7 @@ jobs:
 
     - name: Run tests
       run: |
-        cd myapi
+        cd MyBooks
         python manage.py test
 
     - name: Trigger API with Authentication
