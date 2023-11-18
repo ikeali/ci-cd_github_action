@@ -25,6 +25,12 @@ jobs:
         
     - name: Print current directory
       run: pwd
+      
+    - name: Run tests
+      run: |
+        ls  # Print the contents of the current directory
+        ls MyBooks  # Print the contents of the MyBooks directory
+        python MyBooks/manage.py test
 
     - name: Run tests
       run: |
