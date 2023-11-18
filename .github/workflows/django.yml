@@ -28,6 +28,7 @@ jobs:
       
     - name: Run tests
       run: |
+        cd $GITHUB_WORKSPACE  # Change to the root directory of the repository
         ls  # Print the contents of the current directory
         ls MyBooks  # Print the contents of the MyBooks directory
         python MyBooks/manage.py test
