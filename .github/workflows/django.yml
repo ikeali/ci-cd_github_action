@@ -31,12 +31,8 @@ jobs:
       
     - name: Run tests
       run: |
-        cd MyBooks
-        python manage.py test
+       python MyBooks/manage.py test
     
-    - name: Change back to the root directory
-      run: cd ..
-
     - name: Trigger API with Authentication
       run: |
         curl -X POST http://127.0.0.1:8000/books/ \
