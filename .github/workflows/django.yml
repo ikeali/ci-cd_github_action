@@ -30,6 +30,9 @@ jobs:
       run: |
         cd MyBooks
         python manage.py test
+    
+    - name: Change back to the root directory
+      run: cd ..
 
     - name: Trigger API with Authentication
       run: |
