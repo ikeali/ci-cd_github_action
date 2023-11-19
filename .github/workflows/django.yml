@@ -25,7 +25,10 @@ jobs:
         
     - name: Print current directory
       run: pwd
-
+    
+    - name: List directory contents
+      run: ls -l
+      
     - name: Run tests
       run: |
         cd MyBooks
