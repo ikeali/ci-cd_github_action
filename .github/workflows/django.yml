@@ -37,5 +37,4 @@ jobs:
       run: |
         curl -X POST http://localhost:8000/books/ \
           -H "Content-Type: application/json" \
-          -H "Authorization: Token ${{ secrets.API_TOKEN }}" \
           -d '{"title": "Example Title", "author": "Example Author"}'
