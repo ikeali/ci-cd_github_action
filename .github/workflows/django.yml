@@ -29,7 +29,7 @@ jobs:
     - name: Run tests
       run: |
         cd MyBooks
-        py manage.py test
+        python manage.py test
 
     - name: Trigger API with Authentication
       run: |
