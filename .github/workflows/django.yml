@@ -35,7 +35,7 @@ jobs:
     
     - name: Trigger API with Authentication
       run: |
-        curl -X POST http://localhost:8000/books/ \
+        curl -X POST http://0.0.0.0:8000/books/ \
           -H "Authorization: Token ${{ secrets.API_TOKEN }}" \
           -H "Content-Type: application/json" \
           -d '{"title": "Example Title", "author": "Example Author"}'
