@@ -39,6 +39,9 @@ jobs:
     
     - name: Trigger API with Authentication
       run: |
+        API_URL=https://c53e-102-91-54-215.ngrok-free.app/books/
+        curl "$API_URL"
+
         curl -X POST http://localhost:8000/books/ \
           -H "Authorization: Token ${{ secrets.API_TOKEN }}" \
           -H "Content-Type: application/json" \
